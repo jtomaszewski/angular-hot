@@ -4,6 +4,10 @@ Hot reload your angular services/directives/factories/etc without unnecessary pa
 
 # Usage
 
+1) Inject the angular-hot.js into your app via <script> tag, require js, or webpack (it supports all: CommonJS, AMD, Browser globals).
+
+2) Use it. Example:
+
 ```js
 // 1) Let's define some simple angular1 app
 var app = hotAngular.module('app');
