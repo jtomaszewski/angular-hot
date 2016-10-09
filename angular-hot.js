@@ -164,9 +164,9 @@
       };
     }
 
-    function decorateNgModuleProviderFunction(type) {
+    function decorateNgModuleProviderFunction(providerType) {
       return function registerNgModuleProvider() {
-        ngModule.apply(type, arguments);
+        ngModule[providerType].apply(ngModule, arguments);
 
         return hotNgModule;
       };
