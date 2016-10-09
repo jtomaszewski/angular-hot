@@ -1,6 +1,6 @@
 {
   "name": "angular-hot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Hot reload your angular services/directives/factories/etc without unnecessary pain.",
   "main": "angular-hot.js",
   "scripts": {
