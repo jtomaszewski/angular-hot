@@ -1,0 +1,27 @@
+{
+  "name": "angular-hot",
+  "version": "1.0.0",
+  "description": "Hot reload your angular services/directives/factories/etc without unnecessary pain.",
+  "main": "angular-hot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtomaszewski/angular-hot.git"
+  },
+  "keywords": [
+    "angular",
+    "hot",
+    "reload",
+    "webpack",
+    "angular.js",
+    "angularjs"
+  ],
+  "author": "Jacek Tomaszewski <jacek@jtom.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jtomaszewski/angular-hot/issues"
+  },
+  "homepage": "https://github.com/jtomaszewski/angular-hot#readme"
+}
