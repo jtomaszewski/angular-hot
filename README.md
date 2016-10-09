@@ -4,9 +4,15 @@ Hot reload your angular services/directives/factories/etc without unnecessary pa
 
 # Usage
 
-1) Inject the angular-hot.js into your app via <script> tag, require js, or webpack (it supports all: CommonJS, AMD, Browser globals).
+1) Add the `angular-hot.js` file into your grunt/gulp/brunch vendors files list, or require it with require.js, webpack or whatever thing you're using (it should support all of them: CommonJS, AMD, Browser globals).
 
-2) Use it. Example:
+2) Replace all your `angular.module(...)` with `hotAngular.module(...)` .
+
+3) If you have any `.run(fn)` or `.config(fn)` callback, replace them to `.run(fnStringKey, fn)` and `.config(fnStringKey, fn)`. It can be any string key, just remember to keep them unique (1 unique key for each unique function).
+
+4) Done. Check out [HotApp.js](https://github.com/jtomaszewski/hot-app), to see how to make it work with webpack hot reload!
+
+# Proof of Concept
 
 ```js
 // 1) Let's define some simple angular1 app
